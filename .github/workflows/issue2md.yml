@@ -39,7 +39,7 @@ jobs:
           source venv/bin/activate
           python tools/issue2md.py ${{ secrets.GT }} ${{ github.repository }} ${{ github.event.issue.number }}
         
-      - name: Push README
+      - name: Push
         uses: github-actions-x/commit@v2.6
         with:
           github-token: ${{ secrets.GT }}
