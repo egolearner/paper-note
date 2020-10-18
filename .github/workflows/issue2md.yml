@@ -1,4 +1,4 @@
-name: Generate README
+name: Backup issue
 
 on:
   issues:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   sync:
-    name: Generate README
+    name: Backup issue
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -44,7 +44,7 @@ jobs:
         with:
           github-token: ${{ secrets.GT }}
           commit-message: "backup issue"
-          files: README.md
+          files: backup
           rebase: 'true'
           name: egolearner 
           email: lijiliang@outlook.com
