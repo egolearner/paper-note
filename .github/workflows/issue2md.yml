@@ -43,7 +43,7 @@ jobs:
         uses: github-actions-x/commit@v2.6
         with:
           github-token: ${{ secrets.GT }}
-          commit-message: "Refresh README"
+          commit-message: "backup issue"
           files: README.md
           rebase: 'true'
           name: egolearner 
