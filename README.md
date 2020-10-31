@@ -1,12 +1,13 @@
 # paper note
 ## archives
+- [Product Quantization for Nearest Neighbor Search[4]](https://github.com/egolearner/paper-note/issues/19)--2020-10-31
 - [papers to read](https://github.com/egolearner/paper-note/issues/18)--2020-10-27
 - [Video Google: A Text Retrieval Approach to Object Matching in Videos[3]](https://github.com/egolearner/paper-note/issues/17)--2020-10-04
 - [ModelHub: Lifecycle Management for Deep Learning[4]](https://github.com/egolearner/paper-note/issues/16)--2020-09-20
 - [Fiber: A Platform for Efficient Development and Distributed Training for Reinforcement Learning and Population-Based Methods](https://github.com/egolearner/paper-note/issues/15)--2020-08-16
-- [Automatically Tracking Metadata and Provenance of Machine Learning Experiments](https://github.com/egolearner/paper-note/issues/14)--2020-08-08
 <details><summary>显示更多</summary>
 
+- [Automatically Tracking Metadata and Provenance of Machine Learning Experiments](https://github.com/egolearner/paper-note/issues/14)--2020-08-08
 - [Data Management Challenges in Production Machine Learning[3]](https://github.com/egolearner/paper-note/issues/13)--2020-07-14
 - [Goods: Organizing Google's Datasets[4]](https://github.com/egolearner/paper-note/issues/12)--2020-06-25
 - [Autopilot: workload autoscaling at Google[5]](https://github.com/egolearner/paper-note/issues/11)--2020-06-20
@@ -47,6 +48,7 @@
 - [Compressing Neural Networks with the Hashing Trick](https://github.com/egolearner/paper-note/issues/8)--2019-10-05
 - [Feature Hashing for Large Scale Multitask Learning](https://github.com/egolearner/paper-note/issues/7)--2019-10-05
 ## area/similarity-search
+- [Product Quantization for Nearest Neighbor Search[4]](https://github.com/egolearner/paper-note/issues/19)--2020-10-31
 - [Video Google: A Text Retrieval Approach to Object Matching in Videos[3]](https://github.com/egolearner/paper-note/issues/17)--2020-10-04
 ## area/training
 - [TensorFlow Estimators: Managing Simplicity vs. Flexibility in High-Level Machine Learning Frameworks[5]](https://github.com/egolearner/paper-note/issues/6)--2019-09-01
