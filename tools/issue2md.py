@@ -3,6 +3,7 @@ from github import Github
 from github.Issue import Issue
 import argparse
 import os
+import glob
 
 TODO_ISSUES_LABELS = ["TODO"]
 
@@ -23,7 +24,13 @@ def get_repo(user: Github, repo: str):
 
 def save_issue(issue, me, directory='backup'):
     os.makedirs(directory, exist_ok=True)
-    name = '%s/%s.md' % (directory, issue.title.replace(' ', '.'))
+    fileList = glob.glob(f'{directory}/{issue.number}_*.md')
+    for f in fileList:
+        try:
+            os.remove(f)
+        except:
+            pass
+    name = f'{directory}/{issue.number}_{issue.title.replace(' ', '.').md'
     with open(name, "w") as f:
         f.write(f"# [{issue.title}]({issue.html_url})\n\n")
         f.write(issue.body)
