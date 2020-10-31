@@ -30,7 +30,7 @@ def save_issue(issue, me, directory='backup'):
             os.remove(f)
         except:
             pass
-    name = f"{directory}/{issue.number}_{issue.title.replace(' ', '.').md"
+    name = f"{directory}/{issue.number}_{issue.title.replace(' ', '.')}.md"
     with open(name, "w") as f:
         f.write(f"# [{issue.title}]({issue.html_url})\n\n")
         f.write(issue.body)
