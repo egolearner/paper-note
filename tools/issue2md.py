@@ -4,6 +4,8 @@ from github.Issue import Issue
 import argparse
 import os
 
+TODO_ISSUES_LABELS = ["TODO"]
+
 def get_me(user):
     return user.get_user().login
 
@@ -19,7 +21,7 @@ def get_repo(user: Github, repo: str):
     return user.get_repo(repo)
 
 
-def save_issue(issue, directory='backup'):
+def save_issue(issue, me, directory='backup'):
     os.makedirs(directory, exist_ok=True)
     name = '%s/%s.md' % (directory, issue.title.replace(' ', '.'))
     with open(name, "w") as f:
@@ -27,8 +29,9 @@ def save_issue(issue, directory='backup'):
         f.write(issue.body)
         if issue.comments:
             for c in issue.get_comments():
-                f.write("\n\n---\n\n")
-                f.write(c.body)
+                if isMe(c, me):
+                    f.write("\n\n---\n\n")
+                    f.write(c.body)
 
 
 def main(token, repo_name, number):
@@ -38,7 +41,9 @@ def main(token, repo_name, number):
     issue = repo.get_issue(number=number)
     if not isMe(issue, me):
         return
-    save_issue(issue)
+    if issue.labels and issue.labels[0] in TODO_ISSUES_LABELS:
+        return
+    save_issue(issue, me)
 
 
 if __name__ == "__main__":
