@@ -67,3 +67,7 @@ $$r(y) = y - q_c(y)$$
 参考资料
 * http://yongyuan.name/blog/vector-ann-search.html
 * http://vividfree.github.io/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/2017/08/05/understanding-product-quantization
+
+---
+
+PQ的核心在于将高维向量空间分解为子空间的笛卡尔积，然后分别对子空间做量化。
