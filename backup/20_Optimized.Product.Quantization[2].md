@@ -2,7 +2,7 @@
 
 [http://ieeexplore.ieee.org/abstract/document/6678503/](http://ieeexplore.ieee.org/abstract/document/6678503/)
 
-2013年CVPR论文，对[PQ](19) 的优化。
+2013年CVPR论文，对PQ #19  的优化。
 
 PQ的论文实验中提到，对于SIFT/GIST数据集structured分组结果要优于natural和random分组。这篇论文主要是讲在没有先验知识的前提下如何对向量空间做线性变换以产生最优的PQ结果。
 
